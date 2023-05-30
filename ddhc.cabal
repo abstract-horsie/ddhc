@@ -1,0 +1,33 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 0ec5c15ede2b388a45a8bd75ce4dcbe07d1473b173e5b228e0c4b60b53848fea
+
+name:           ddhc
+version:        0.1.0.0
+synopsis:       (D)rastically (D)ifferent (H)askell (C)ompiler
+category:       Compiler
+author:         hasklix
+maintainer:     _not_@_disclosed_._out_
+copyright:      2021 hasklix
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+executable ddhc
+  main-is: Main.hs
+  other-modules:
+      Lexer
+      Paths_ddhc
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , llvm-hs
+    , llvm-hs-pure
+  default-language: Haskell2010

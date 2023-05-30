@@ -1,0 +1,36 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 7cb76ddf1e8030db10241555b35aec9f25d708d8740e04f8f013f52dbc138b41
+
+name:           ddlewd
+version:        0.1.0.0
+synopsis:       Prelude for DDHC (Drastically Different Haskell Compiler)
+description:    No description for now :)
+category:       Prelude
+author:         hasklix
+maintainer:     _not_@_disclosed_._out_
+copyright:      2021 hasklix
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+library
+  exposed-modules:
+      DDLewd
+  other-modules:
+      Paths_ddlewd
+  hs-source-dirs:
+      src
+  default-extensions:
+      NoImplicitPrelude
+  ghc-options: -Wall
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010

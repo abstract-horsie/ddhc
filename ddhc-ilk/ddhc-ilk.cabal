@@ -1,0 +1,34 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           ddhc-ilk
+version:        0.1.0.0
+synopsis:       Type Checker for DDHC (Drastically Different Haskell Compiler)
+category:       Type Checker
+author:         hasklix
+maintainer:     _not_@_disclosed_._out_
+copyright:      2021 hasklix
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+library
+  exposed-modules:
+      DDHC.Ilk.Scrutinizer
+  other-modules:
+      Paths_ddhc_ilk
+  hs-source-dirs:
+      src
+  default-extensions:
+      NoImplicitPrelude
+  ghc-options: -Wall -fhpc
+  build-depends:
+      base >=4.7 && <5
+    , ddhc-parser
+    , ddlewd
+  default-language: Haskell2010

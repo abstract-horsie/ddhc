@@ -1,0 +1,56 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: d2941febf26c11eb2e9f741aacb36333b55ab2a2815dc390cd6d0529bfa9ed3b
+
+name:           ddhc-parser
+version:        0.1.0.0
+synopsis:       Parser for DDHC (Drastically Different Haskell Compiler)
+category:       Parser
+author:         hasklix
+maintainer:     _not_@_disclosed_._out_
+copyright:      2021 hasklix
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+library
+  exposed-modules:
+      DDHC.Parser
+      DDHC.Parser.AST
+      DDHC.Parser.AST.Expr
+      DDHC.Parser.AST.Type
+      DDHC.Parser.Construction
+      DDHC.Parser.Error
+  other-modules:
+      Paths_ddhc_parser
+  hs-source-dirs:
+      src
+  default-extensions:
+      NoImplicitPrelude
+  ghc-options: -Wall
+  build-depends:
+      base >=4.7 && <5
+    , ddhc-scanner
+    , ddlewd
+  default-language: Haskell2010
+
+executable ddhc-parser
+  main-is: Main.hs
+  other-modules:
+      Paths_ddhc_parser
+  hs-source-dirs:
+      app
+  default-extensions:
+      NoImplicitPrelude
+  build-depends:
+      base >=4.7 && <5
+    , ddhc-parser
+    , ddhc-scanner
+    , ddlewd
+  default-language: Haskell2010

@@ -1,0 +1,22 @@
+name:                ddhc
+version:             0.1.0.0
+synopsis:            (D)rastically (D)ifferent (H)askell (C)ompiler
+#description:
+#homepage:            
+license:             BSD3
+author:              hasklix
+maintainer:          _not_@_disclosed_._out_
+copyright:           2021 hasklix
+category:            Compiler
+extra-source-files:
+  - README.md
+
+dependencies:
+  - base >= 4.7 && < 5
+  - llvm-hs
+  - llvm-hs-pure
+
+executables:
+  ddhc:
+    source-dirs:      src
+    main:             Main.hs

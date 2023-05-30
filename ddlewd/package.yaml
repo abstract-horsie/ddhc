@@ -1,0 +1,36 @@
+name:                ddlewd
+version:             0.1.0.0
+license:             BSD3
+author:              "hasklix"
+maintainer:          "_not_@_disclosed_._out_"
+copyright:           "2021 hasklix"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+synopsis:            Prelude for DDHC (Drastically Different Haskell Compiler)
+category:            Prelude
+
+description:         No description for now :)
+
+dependencies:
+- base >= 4.7 && < 5
+
+library:
+  source-dirs: src
+  ghc-options:
+  - -Wall
+  default-extensions:
+  - NoImplicitPrelude
+
+# tests:
+#   ddlewd:
+#     main:                Spec.hs
+#     source-dirs:         test
+#     ghc-options:
+#     - -threaded
+#     - -rtsopts
+#     - -with-rtsopts=-N
+#     dependencies:
+#     - ddlewd

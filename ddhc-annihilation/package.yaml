@@ -1,0 +1,49 @@
+name:                ddhc-annihilation
+version:             0.1.0.0
+synopsis:            Error Detector for DDHC (Drastically Different Haskell Compiler)
+#description:         
+#homepage:            
+license:             BSD3
+author:              hasklix
+maintainer:          _not_@_disclosed_._out_
+copyright:           2021 hasklix
+category:            Parser
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+dependencies:
+  - base >= 4.7 && < 5
+  - ddlewd
+  - ddhc-scanner
+  - ddhc-parser
+
+library:
+  source-dirs: src
+  ghc-options:
+  - -Wall
+  # - -fhpc
+  default-extensions:
+  - NoImplicitPrelude
+
+# executables:
+#   ddhc-annihilation-exe:
+#     main:                Main.hs
+#     source-dirs:         app
+#     ghc-options:
+#     - -threaded
+#     - -rtsopts
+#     - -with-rtsopts=-N
+#     dependencies:
+#     - ddhc-annihilation
+
+# tests:
+#   ddhc-annihilation-test:
+#     main:                Spec.hs
+#     source-dirs:         test
+#     ghc-options:
+#     - -threaded
+#     - -rtsopts
+#     - -with-rtsopts=-N
+#     dependencies:
+#     - ddhc-annihilation
